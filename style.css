@@ -279,10 +279,10 @@ nav{
     background-color: #FFEEE3;
     box-shadow: 0px 100px 80px rgb(0 0 0 / 7%), 0px 41.7776px 33.4221px rgb(0 0 0 / 5%), 0px 22.3363px 17.869px rgb(0 0 0 / 4%), 0px 12.5216px 10.0172px rgb(0 0 0 / 4%), 0px 6.6501px 5.32008px rgb(0 0 0 / 3%), 0px 2.76726px 2.21381px rgb(0 0 0 / 2%);
     position: absolute;
-    left: 872px;
-    top: 2084px;
-    width: 483px;
-    height: 413px;
+    left: 746px;
+    top: 2124px;
+    width: 375px;
+    height: 381px;
 }
 .title_testimonials{
     font-family: 'Italiana';
@@ -293,18 +293,20 @@ nav{
     font-weight: 500;
 }
 .bgImg{
-    width: 136px;
-    height: 136px;
+    width: 100px;
+    height: 100px;
     margin: auto;
+    margin-top: 15px;
     text-align: center;
     border-radius: 50%;
     box-shadow: -6px 6px 6px rgb(0 0 0 / 23%);
     -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: -6px 6px 6px rgb(0 0 0 / 23%);
+    -webkit-box-shadow: -2px 1px 6px rgb(0 0 0 / 23%);
 }
 .imgTestimonial{
-    margin-top: 6px;
-    margin-left: -4px;
-    width: 128px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
 }
