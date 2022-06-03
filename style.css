@@ -9,9 +9,6 @@
     height: 12px;
     background-color: #C5D8D8;
 }
-nav{
-    background-color: #ffff;
-}
 .navbar{
     top: 15px;
     padding: 212px;
@@ -141,10 +138,10 @@ nav{
     margin-top: 11%;
 }
 /************* header **************/
-.header{
+.header1{
     height: 700px;
 }
-.img_header{
+.img_header1{
     position: absolute;
     width: 749px;
     left: 84px;
@@ -153,7 +150,7 @@ nav{
     filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
     
 }
-.box_slogan{
+.box_slogan1{
     width: 409px;
     height: 241px;
     background: #C5D8D8;
@@ -173,7 +170,7 @@ nav{
     z-index: 1;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
-.btn_slogan{
+.btn_slogan1{
     width: 237px;
     height: 38px;
     position: absolute;
@@ -183,7 +180,7 @@ nav{
     border: none;
     color: #5E5D5D;
 }
-.slogan{
+.slogan1{
     height: 11px;
     font-size: 18px;
     color: #FFFFFF;
@@ -192,7 +189,7 @@ nav{
     text-align: center;
     margin-left: 50px;
 }
-.title_slogan{
+.title_slogan1{
     font-family: 'Italiana', serif;
     font-size: 30px;
     color: #003838;
@@ -320,5 +317,112 @@ nav{
     color: #000000;;
     font-size: 20px;
     text-align: center;
-
+}
+/************ header about *************/
+.img_header2{
+    width: 100%;
+    margin-top: 12px;
+}
+.box_slogan2{
+    width: 903px;
+    height: 145px;
+    background: #FDECE1;
+    position: absolute;
+    left: 306px;
+    top: 290px;
+    z-index: 2;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);}
+.btn_slogan2{
+    font-size: 17px;
+    width: 258px;
+    height: 35px;
+    position: absolute;
+    left: 327px;
+    top: 100px;
+    background-color: #E2B595;
+    border: none;
+    color: #5E5D5D;
+}
+.slogan2{
+    height: 11px;
+    font-size: 19px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: -31px;
+}
+.title_slogan2{
+    font-size: 27px;
+    color: #003838;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 332px;
+    height: 84px;
+}
+/********* about tangier guides **********/
+body{
+    height: 100vh;
+    background: linear-gradient(
+      to right,
+      #FFFFFF 0%,
+      #FFFFFF 50%,
+      #FFF7F2 50%,
+      #FFF7F2 100%
+    );
+}
+/*** power ***/
+.power{
+    height: 306px;
+    margin-top: 98px;
+}
+.title_power{
+    color: #003838;
+    font-family: 'Italiana';
+    font-size: 42px;
+    text-align: center;
+}
+.text_power{
+    color: #000000; 
+    font-size: 20px;
+    text-align: center;
+}
+/*** services ***/
+.box_services{
+    width: 40%;
+    margin-top: 104px;
+}
+.title_services{
+    color: #003838;
+    font-family: 'Italiana';
+    font-size: 42px;
+}
+.text_services{
+    color: #000000;
+    font-size: 20px;
+}
+/*** guides ***/
+.about_guides{
+    margin-top: 104px;
+}
+/************* gallery ************/
+.title_slogan2{
+    font-size: 27px;
+    color: #003838;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 379px;
+    height: 84px;
+}
+.our_gallery{
+    background-color: #003838;
+    width: 65%;
+    margin-left: 251px;
+    margin-top: 160px;
+}
+.img_gallery{
+    width: 100%;
 }
