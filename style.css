@@ -283,11 +283,11 @@
 }
 .title_testimonials{
     font-family: 'Italiana';
-    text-align: center;
+    position: absolute;
+    top: 49px;
+    left: 63px;
     color: #003838;
     font-size: 28px;
-    margin-top: 21px;
-    font-weight: 500;
 }
 .bgImg{
     width: 100px;
@@ -318,6 +318,9 @@
     font-size: 20px;
     text-align: center;
 }
+.Sliider{
+    margin-top: 99px;
+}
 /************ header about *************/
 .img_header2{
     width: 100%;
@@ -328,7 +331,7 @@
     height: 145px;
     background: #FDECE1;
     position: absolute;
-    left: 306px;
+    left: 348px;
     top: 290px;
     z-index: 2;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);}
@@ -363,7 +366,7 @@
     height: 84px;
 }
 /********* about tangier guides **********/
-body{
+.body_about{
     height: 100vh;
     background: linear-gradient(
       to right,
@@ -418,11 +421,90 @@ body{
     height: 84px;
 }
 .our_gallery{
-    background-color: #003838;
     width: 65%;
-    margin-left: 251px;
+    margin-left: 306px;
     margin-top: 160px;
 }
 .img_gallery{
     width: 100%;
+}
+.flex_gallery1{
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+.flex_gallery2{
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ /************** find a guide **************/
+/**** power guides ***/ 
+.title_Power{
+    color: #003838;
+    font-family: 'Italiana';
+    font-size: 42px;
+    margin-left: 35%;
+}
+.text_Power{
+    color: #000000; 
+    font-size: 20px;
+    margin-left: 35%;
+}
+.find_guide{
+    display: flex;
+    width: 100%;
+}
+.Filter_Search{
+    flex-grow: 1;
+}
+.view_profile{
+    flex-grow: 8;
+}
+/*** Search ***/
+.Filter_by{
+    font-family: 'Italiana';
+    font-size: 38px;
+    color: #003838;
+    margin-left: 40px;
+}
+.By_langauge{
+    text-align: center;
+    color: #003838;
+    font-size: 23px;
+    width: 319px;
+    height: 42px;
+    background-color: #FFF7F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Check{
+    width: 25px !important;
+    height: 25px !important;
+}
+.Check_label{
+    font-size: 20px;
+    color: #000000;
+    margin-left: 10px !important;
+}
+.form-check{
+    margin-top: 17px !important;
+    margin-left: 10px !important;
+}
+.input_date{
+    width: 274px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+.img_guide{
+    width: 325px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: 47px;
 }
