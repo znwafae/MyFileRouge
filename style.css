@@ -440,7 +440,7 @@
     margin-top: 20px;
     margin-left: 20px;
 }
- /************** find a guide **************/
+/************** find a guide **************/
 /**** power guides ***/ 
 .title_Power{
     color: #003838;
@@ -498,6 +498,7 @@
     margin-top: 30px;
     margin-left: 40px;
 }
+/*** profiles ***/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -507,4 +508,144 @@
     height: 350px;
     margin-bottom: 20px;
     margin-left: 47px;
+}
+/************** cantact **************/
+.background_image{
+    width: 100%;
+    margin-top: 15px;
+}
+.cantact_form{
+    position: absolute;
+    top: 204px;
+    left: 52px;
+    width: 1487px;
+    height: 847px;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+.Cantact_Us{
+    font-family: 'Italiana', serif;
+    font-size: 57px;
+    color: #003838;
+}
+.form-control{
+    width: 50% !important;
+}
+.btn_cantact{
+    color: #5E5D5D;
+    font-size: 23px;
+    background: #E2B595;
+    border: none;
+    margin-top: 17px;
+    width: 352px;
+    height: 47px;
+}
+.cantact{
+    width: 500px;
+    margin-top: 124px;
+    margin-left: 161px;
+}
+.input_text{
+    width: 599px;
+    height: 66px;
+    margin-top: 20px;
+    border: 0.5px solid #969696;
+    outline: none;
+}
+.input_message{
+    width: 599px;
+    height: 150px;
+    padding-top: 10px;
+    margin-top: 20px;
+    border: 0.5px solid #969696;
+    outline: none;
+}
+.copyright_cantact{
+    color: #837E7E;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 76px;
+}
+.box_info{
+    margin-left: 954px;
+    margin-top: -671px;
+    width: 457px;
+    height: 781px;
+    background: #C5D8D8;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+.P_info{
+    color: #003838;
+    font-family: 'Italiana';
+    font-size: 57px;
+    text-align: center;
+}
+.info{
+    display: flex;
+    margin-left: 22%;
+    margin-top: 114px;
+}
+.info_icons{
+    flex-grow: 1;
+}
+.infos_p{
+    flex-grow: 8;
+}
+.icon_info{
+    margin-bottom: 39px;
+}
+.info_p{
+    margin-bottom: 48px;
+    font-size: 20px;
+    color: #5E5D5D;
+}
+.atm_info{
+    position: absolute;
+    top: 680px;
+    right: 237px;
+}
+.box_description{
+    width: 698px;
+    height: 333px;
+    position: absolute;
+    top: 232px;
+    left: 534px;
+    background: #FDECE1;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+.box_img{ 
+    width: 486px;
+    height: 513px;
+    margin-left: 105px;
+    margin-top: 34px;
+    border: 5px solid #C5D8D8;
+}
+.img_profil{
+    width: 440px;
+    height: 468px;
+    margin-left: 18px;
+    margin-top: 16px;
+    background-color: #63a8a8;
+}
+.full_name{
+    margin-top: 57px;
+    font-family: 'Italiana';
+    color: #003838;
+    font-size: 40px;
+    text-align: center;
+}
+.description{
+    color: #000000;
+    font-size: 23px;
+    text-align: center;
+}
+.btn_description{
+    background: #E2B595;
+    width: 250px;
+    height: 37px;
+    color: #5E5D5D;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    margin-left: 228px;
 }
