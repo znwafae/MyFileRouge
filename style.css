@@ -327,43 +327,41 @@
     margin-top: 12px;
 }
 .box_slogan2{
-    width: 903px;
-    height: 145px;
+    width: 834px;
+    height: 124px;
     background: #FDECE1;
     position: absolute;
-    left: 348px;
-    top: 290px;
+    left: 232px;
+    top: 274px;
     z-index: 2;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);}
 .btn_slogan2{
-    font-size: 17px;
-    width: 258px;
-    height: 35px;
+    font-size: 14px;
+    width: 237px;
+    height: 28px;
     position: absolute;
-    left: 327px;
-    top: 100px;
+    left: 289px;
+    top: 79px;
     background-color: #E2B595;
     border: none;
     color: #5E5D5D;
 }
 .slogan2{
     height: 11px;
-    font-size: 19px;
+    font-size: 15px;
     color: #000000;
     display: flex;
     align-items: center;
-    text-align: center;
-    margin-left: 140px;
-    margin-top: -31px;
+    margin-left: 174px;
+    margin-top: -44px;
 }
 .title_slogan2{
-    font-size: 27px;
+    font-size: 21px;
     color: #003838;
     display: flex;
-    align-items: center;
-    text-align: center;
-    margin-left: 332px;
-    height: 84px;
+    margin-left: 306px;
+    MARGIN-TOP: 15px;
+    height: 68px;
 }
 /********* about tangier guides **********/
 .body_about{
@@ -378,24 +376,24 @@
 }
 /*** power ***/
 .power{
-    height: 306px;
-    margin-top: 98px;
+    height: 259px;
+    margin-top: 56px;
 }
 .title_power{
     color: #003838;
     font-family: 'Italiana';
-    font-size: 42px;
+    font-size: 35px;
     text-align: center;
 }
 .text_power{
     color: #000000; 
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
 }
 /*** services ***/
 .box_services{
     width: 40%;
-    margin-top: 104px;
+    margin-top: 86px;
 }
 .title_services{
     color: #003838;
@@ -406,23 +404,24 @@
     color: #000000;
     font-size: 20px;
 }
+.img_about{
+    width: 35%;
+}
 /*** guides ***/
 .about_guides{
-    margin-top: 104px;
+    margin-top: 86px;
 }
 /************* gallery ************/
-.title_slogan2{
-    font-size: 27px;
+.title_slogan3{
+    font-size: 20px;
     color: #003838;
-    display: flex;
     align-items: center;
-    text-align: center;
-    margin-left: 379px;
-    height: 84px;
+    margin-left: 314px;
+    height: 68px;
 }
 .our_gallery{
-    width: 65%;
-    margin-left: 306px;
+    width: 52%;
+    margin-left: 323px;
     margin-top: 160px;
 }
 .img_gallery{
@@ -445,13 +444,13 @@
 .title_Power{
     color: #003838;
     font-family: 'Italiana';
-    font-size: 42px;
-    margin-left: 27%;
+    font-size:32px;
+    margin-left: 29%;
 }
 .text_Power{
     color: #000000; 
-    font-size: 20px;
-    margin-left: 27%;
+    font-size: 17px;
+    margin-left: 29%;
 }
 .find_guide{
     display: flex;
@@ -466,25 +465,25 @@
 /*** Search ***/
 .Filter_by{
     font-family: 'Italiana';
-    font-size: 38px;
+    font-size: 29px;
     color: #003838;
     margin-left: 40px;
 }
 .By_langauge{
     text-align: center;
     color: #003838;
-    font-size: 23px;
-    width: 319px;
-    height: 42px;
+    font-size: 19px;
+    width: 269px;
+    height: 34px;
     background-color: #FFF7F2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .Check{
-    width: 25px !important;
-    height: 25px !important;
+    width: 17px !important;
+    height: 17px !important;
 }
 .Check_label{
-    font-size: 20px;
+    font-size: 15px;
     color: #000000;
     margin-left: 10px !important;
 }
@@ -493,8 +492,8 @@
     margin-left: 10px !important;
 }
 .input_date{
-    width: 274px;
-    height: 40px;
+    width: 227px;
+    height: 36px;
     margin-top: 30px;
     margin-left: 40px;
 }
@@ -503,11 +502,47 @@
     display: grid;
     grid-template-columns: auto auto auto;
   }
-.img_guide{
-    width: 325px;
-    height: 350px;
+.hover_profile{
+    position: relative;
+    width: 257px;
+    height: 275px;
     margin-bottom: 20px;
-    margin-left: 47px;
+}
+.hover_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.29);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.hover_btn:hover{
+    opacity: 1;
+}
+.btn_profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 175px;
+    height: 35px;
+    border: 2.5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.img_guide{
+    width: 100%;
+    height: 100%;
+}
+.title_slogan4 {
+    font-size: 21px;
+    color: #003838;
+    display: flex;
+    margin-left: 351px;
+    MARGIN-TOP: 15px;
+    height: 68px;
 }
 /************** cantact **************/
 .background_image{
@@ -516,16 +551,16 @@
 }
 .cantact_form{
     position: absolute;
-    top: 204px;
+    top: 264px;
     left: 52px;
-    width: 1487px;
-    height: 847px;
+    width: 90%;
+    height: 541px;
     background: #ffffff;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 .Cantact_Us{
     font-family: 'Italiana', serif;
-    font-size: 57px;
+    font-size: 39px;
     color: #003838;
 }
 .form-control{
@@ -533,30 +568,30 @@
 }
 .btn_cantact{
     color: #5E5D5D;
-    font-size: 23px;
+    font-size: 15px;
     background: #E2B595;
     border: none;
-    margin-top: 17px;
-    width: 352px;
-    height: 47px;
+    margin-top: 20px;
+    width: 244px;
+    height: 33px;
 }
 .cantact{
     width: 500px;
-    margin-top: 124px;
-    margin-left: 161px;
+    margin-top: 65px;
+    margin-left: 105px;
 }
 .input_text{
-    width: 599px;
-    height: 66px;
-    margin-top: 20px;
+    width: 487px;
+    height: 44px;
+    margin-top: 19px;
     border: 0.5px solid #969696;
     outline: none;
 }
 .input_message{
-    width: 599px;
-    height: 150px;
+    width: 487px;
+    height: 89px;
     padding-top: 10px;
-    margin-top: 20px;
+    margin-top: 19px;
     border: 0.5px solid #969696;
     outline: none;
 }
@@ -567,23 +602,23 @@
     margin-top: 76px;
 }
 .box_info{
-    margin-left: 954px;
-    margin-top: -671px;
-    width: 457px;
-    height: 781px;
+    margin-left: 739px;
+    margin-top: -463px;
+    width: 340px;
+    height: 472px;
     background: #C5D8D8;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 .P_info{
     color: #003838;
     font-family: 'Italiana';
-    font-size: 57px;
+    font-size: 39px;
     text-align: center;
 }
 .info{
     display: flex;
-    margin-left: 22%;
-    margin-top: 114px;
+    margin-left: 21%;
+    margin-top: 73px;
 }
 .info_icons{
     flex-grow: 1;
@@ -592,23 +627,24 @@
     flex-grow: 8;
 }
 .icon_info{
-    margin-bottom: 39px;
+    margin-bottom: 20px;
+    width: 25px;
 }
 .info_p{
-    margin-bottom: 48px;
-    font-size: 20px;
+    margin-bottom: 24px;
+    font-size: 15px;
     color: #5E5D5D;
 }
 .atm_info{
     position: absolute;
-    top: 680px;
-    right: 237px;
+    top: 387px;
+    right: 165px;
 }
 .box_description{
-    width: 698px;
-    height: 333px;
+    width: 541px;
+    height: 272px;
     position: absolute;
-    top: 232px;
+    top: 199px;
     left: 534px;
     background: #FDECE1;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
@@ -616,75 +652,73 @@
 /***************** giude ***************/
 /* headar */
 .box_img{ 
-    width: 486px;
-    height: 513px;
-    margin-left: 105px;
-    margin-top: 34px;
+    width: 411px;
+    height: 449px;
+    margin-left: 174px;
+    margin-top: 4px;
     border: 5px solid #C5D8D8;
 }
 .img_profil{
-    width: 440px;
-    height: 468px;
-    margin-left: 18px;
-    margin-top: 16px;
+    width: 377px;
+    height: 414px;
+    margin-left: 12px;
+    margin-top: 11px;
     background-color: #63a8a8;
 }
 .full_name{
-    margin-top: 57px;
+    margin-top: 38px;
     font-family: 'Italiana';
     color: #003838;
-    font-size: 40px;
+    font-size: 33px;
     text-align: center;
 }
 .description{
     color: #000000;
-    font-size: 23px;
+    font-size: 19px;
     text-align: center;
 }
 .btn_description{
     background: #E2B595;
-    width: 250px;
-    height: 37px;
+    width: 246px;
+    height: 34px;
     color: #5E5D5D;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
     border: none;
-    margin-left: 228px;
+    margin-left: 153px;
 }
 /* info guide */
 .info_guide{
     background: #FDECE1;
     width: 100%;
-    height: 413px;
+    height: 319px;
     margin-top: 55px;
 }
 .bg_info{
     background: #C5D8D8;
-    width: 828px;
-    height: 184px;
+    width: 708px;
+    height: 122px;
     position: absolute;
-    top: 787px;
-    left: 31px;
+    top: 664px;
+    left: 131px;
 }
 .col-md p{
     color: #003838;
-    font-size: 25px; 
-    margin-top: 8px;
+    font-size: 17px; 
 }
 .col-md-8 p{
-    font-size: 25px;
+    font-size: 18px;
     color: #5E5D5D;
-    margin-top: 8px;
 }
 .Rows{
     margin-left: 50px;
 }
 .bg_language{
-    width: 355px;
-    height: 184px;
+    width: 267px;
+    height: 122px;
     position: absolute;
-    top: 787px;
-    left: 890px;
+    top: 664px;
+    left: 852px;
     background: #C5D8D8;
 }
 .language{
