@@ -376,8 +376,8 @@
 }
 /*** power ***/
 .power{
-    height: 259px;
-    margin-top: 56px;
+    height: 203px;
+    margin-top: 83px;
 }
 .title_power{
     color: #003838;
@@ -441,16 +441,16 @@
 }
 /************** find a guide **************/
 /**** power guides ***/ 
-.title_Power{
+.title_PowerG{
     color: #003838;
     font-family: 'Italiana';
     font-size:32px;
-    margin-left: 29%;
+    margin-left: 24%;
 }
-.text_Power{
+.text_PowerG{
     color: #000000; 
     font-size: 17px;
-    margin-left: 29%;
+    margin-left: 24%;
 }
 .find_guide{
     display: flex;
