@@ -1,0 +1,146 @@
+/************** find a guide **************/
+.box_slogan2{
+    width: 834px;
+    height: 100px !important;
+    background: #FDECE1;
+    position: absolute;
+    left: 232px;
+    top: 274px;
+    z-index: 2;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);}
+.title_slogan4 {
+    font-size: 21px;
+    color: #003838;
+    display: flex;
+    margin-left: 351px;
+    MARGIN-TOP: 15px;
+    height: 68px;
+}
+.slogan2{
+    height: 11px;
+    font-size: 15px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-left: 174px;
+    margin-top: -44px;
+}
+.btn_slogan2{
+    font-size: 14px;
+    width: 237px;
+    height: 28px;
+    position: absolute;
+    left: 289px;
+    top: 79px;
+    background-color: #E2B595;
+    border: none;
+    color: #5E5D5D;
+}
+    /**** power guides ***/ 
+.power{
+    height: 203px;
+    margin-top: 83px;
+}
+.title_PowerG{
+    color: #003838;
+    font-family: 'Italiana';
+    font-size:32px;
+    margin-left: 24%;
+}
+.text_PowerG{
+    color: #000000; 
+    font-size: 17px;
+    margin-left: 24%;
+}
+.find_guide{
+    display: flex;
+    width: 100%;
+}
+.Filter_Search{
+    flex-grow: 1;
+}
+.view_profile{
+    flex-grow: 8;
+}
+/*** Search ***/
+.Filter_by{
+    font-family: 'Italiana';
+    font-size: 29px;
+    color: #003838;
+    margin-left: 40px;
+}
+.By_langauge{
+    text-align: center;
+    color: #003838;
+    font-size: 19px;
+    width: 269px;
+    height: 34px;
+    background-color: #FFF7F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Check{
+    width: 17px !important;
+    height: 17px !important;
+}
+.Check_label{
+    font-size: 15px;
+    color: #000000;
+    margin-left: 10px !important;
+}
+.form-check{
+    margin-top: 17px !important;
+    margin-left: 10px !important;
+}
+.input_date{
+    width: 227px;
+    height: 36px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+/* *** profiles ***/ 
+.grid-container {
+    display: grid !important;
+    grid-template-columns: auto auto auto !important;
+  }
+.hover_profile{
+    position: relative;
+    width: 257px;
+    height: 275px;
+    margin-bottom: 20px;
+}
+.hover_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.29);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.hover_btn:hover{
+    opacity: 1;
+}
+.btn_profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 175px;
+    height: 35px;
+    border: 2.5px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.img_guide{
+    width: 100%;
+    height: 100%;
+}
+.title_slogan4 {
+    font-size: 21px;
+    color: #003838;
+    display: flex;
+    margin-left: 351px;
+    MARGIN-TOP: 15px;
+    height: 68px;
+}

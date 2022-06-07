@@ -11,7 +11,7 @@ include "navbar.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_guides.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -28,7 +28,6 @@ include "navbar.php";
             <p class="slogan2">
                 We're not here to find your guide, we are here to make you trip amazing
             </p>
-            <button  class="btn_slogan2">FIND A GUIDE</button>
         </div>
     </div>
 <!----------------- power guides -------------->
@@ -72,25 +71,17 @@ include "navbar.php";
         </div>
 <!-------------------------- view profil ---------------------------->
         <div class="view_profile">
-            
             <div class="grid-container">
-
-
-
                 <?php while ($row = mysqli_fetch_assoc($result)): ?>
                 <div class="hover_profile">
                     <img class="img_guide" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                     <div class="hover_btn">
-                        <a href="profile.html"><button class="btn_profile">view the profile</button></a>
+                        <a href="profile.php"><button class="btn_profile">view the profile</button></a>
                     </div>
                 </div>
                 <?php
                 endwhile
                 ?>
-
-
-
-
             </div>
         </div>
     </div>     

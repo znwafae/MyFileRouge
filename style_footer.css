@@ -1,0 +1,56 @@
+/*********************** footer *****************/
+.footer{
+    text-align: center;
+    height: 242px;
+    margin-top: 80px;
+}
+.Logofooter{
+    width: 290px;
+    height: 100px;
+}
+.minifooter{
+    background-color: #C5D8D8;
+    display: flex;
+    margin-left: 2%;
+    width: 96%;
+    right: 150px;
+    height: 110px;
+}
+.atm1{
+    flex-grow: 2;
+}
+.atm2{
+    flex-grow: 2;
+    text-decoration: none;
+}
+.atm3{
+    flex-grow: 1;
+}
+.btnFooter{
+    background-color: #E2B595;
+    width: 228px;
+    height: 36px;
+    border: none;
+    color: #5E5D5D;
+}
+.atm{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #5E5D5D;
+}
+.atm:hover {
+    color: #63a8a8;
+}
+.Social_media{
+    width: 39px;
+}
+.copyright{
+    margin-top: 10px;
+    font-size: 11px;
+    color: #5E5D5D;
+}
+.atms{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

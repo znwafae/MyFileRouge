@@ -1,10 +1,14 @@
+<?php
+include "connection.php";
+include "navbar.php"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -12,28 +16,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 </style>
 <body class="body_about">
-<!------------- navbar -------------->
-    <nav>
-        <div class="nav1"></div>
-        <div class="navbar">
-                <a href="">GUIDES</a>           
-                <a href="">ABOUT</a>
-                <a href="">GALLERY</a>
-                <a href="#"><img src="/pictures/Logo.png" alt="logo" class="imgLogo" /></a>
-                <a href="">HOME</a>
-                <a href="">CANTACT</a>
-                <a href="">LOGIN</a>
-        </div> 
-    </nav>
+
 <!--------------- header about --------------->
     <div>
-        <img class="img_header2" src="/pictures/Rectangle 30.png" alt="">
+        <img class="img_header2" src="pictures/Rectangle 30.png" alt="">
         <div class="box_slogan2">
             <p class="title_slogan2">About Tangier  Guides</p>
             <p class="slogan2">
                 We're not here to find your guide, we are here to make you trip amazing
             </p>
-            <button  class="btn_slogan2">FIND A GUIDE</button>
+            <a href="guides.php"><button  class="btn_slogan2">FIND A GUIDE</button></a>
         </div>
     </div>
 <!--------------------- power tangier guides ----------------------->
@@ -49,7 +41,7 @@
     </div>
 <!------------------------ about services -------------------------->
     <div class=" d-flex justify-content-around justify-content-xl-around">
-        <img class="img_about" src="/pictures/P1150351 1.png" alt="">
+        <img class="img_about" src="pictures/P1150351 1.png" alt="">
         <div class="box_services">
             <p class="title_services">Our Services</p>
             <p class="text_services">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
@@ -71,28 +63,10 @@
                 fringilla est ullamcorper eget nulla
             </p>
         </div>
-        <img class="img_about" src="/pictures/P1150351 2.png" alt="">
+        <img class="img_about" src="pictures/P1150351 2.png" alt="">
     </div>
-<!------------------------ footer ----------------------->
-    <div class="footer">
-        <a href="#"><img class="Logofooter" src="/pictures/Logo.png" alt=""></a>
-        <div class="minifooter">
-            <div class="atm1 atms">
-                <img class="Social_media" src="/pictures/icons8-instagram-50 (3).png" alt="">
-                <img class="Social_media" src="/pictures/icons8-facebook-50 (2).png" alt="">
-                <img class="Social_media" src="/pictures/icons8-twitter-squared-50 (2).png" alt="">
-            </div>
-            <div class="atm2 atms">
-                <a class="atm" href="">ABOUT</a>
-                <a class="atm" href="">CANTACT</a>
-                <a class="atm" href="">GALLERY</a>
-                <a class="atm" href="">LOGIN</a>
-            </div>
-            <div class="atm3 atms">
-                <button class="btnFooter">FIND A GUIDE</button>
-            </div>
-        </div>
-        <p class="copyright">©TangierGuides2022 </p>
-    </div>  
 </body>
 </html>
+<?php
+include "footer.php";
+?>

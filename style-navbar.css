@@ -1,0 +1,21 @@
+/*********************** navbaar *****************/
+.nav1{
+    height: 12px;
+    background-color: #C5D8D8;
+}
+.navbar{
+    top: 15px;
+    padding: 212px;
+}
+.navbar a{
+    font-size: 15px;
+    color: #5E5D5D;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #63a8a8;
+}
+.imgLogo{
+    width: 290px;
+    height: 100px;
+}

@@ -1,10 +1,14 @@
+<?php
+include "connection.php";
+include "navbar.php"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -12,30 +16,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 </style>
 <body>
-<!------------- navbar -------------->
-    <nav>
-    <div class="nav1"></div>
-       <div class="navbar">
-            <a href="">GUIDES</a>           
-            <a href="">ABOUT</a>
-            <a href="">GALLERY</a>
-            <a href="#"><img src="/pictures/Logo.png" alt="logo" class="imgLogo" /></a>
-            <a href="">HOME</a>
-            <a href="">CANTACT</a>
-            <a href="">LOGIN</a>
-       </div> 
-    </nav>
 <!--------------- header --------------->
     <div class="header1">
         <div class="">
-            <img class="img_header1" src="/pictures/Rectangle 4 (2).png" alt="">
+            <img class="img_header1" src="pictures/Rectangle 4 (2).png" alt="">
         </div>
         <div class="box_slogan1">
             <p class="title_slogan1">Tangier Guides</p>
             <p class="slogan1">Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit ut aliquam, purus <br>
                sit amet luctus venenatis</p>
-               <button class="btn_slogan1">FIND A GUIDE</button>
+               <a href="guides.php"><button class="btn_slogan1">FIND A GUIDE</button></a>
         </div>
         <div class="background"></div>
     </div>
@@ -45,21 +36,21 @@
         <p id="title_why">Why People choose Our Services</p>
         <div class="services d-flex justify-content-around justify-content-xl-around ">
             <div class="box box1">
-                <img class="icons_services" src="/pictures/happy 1.png" alt="">
+                <img class="icons_services" src="pictures/happy 1.png" alt="">
                 <p class="P_box">Lorem ipsum <br>
                     dolor sit amet,<br>
                     consec adipiscing <br>
                     elit ut aliquam</p>
             </div>
             <div class="box box2">
-                <img class="icons_services" src="/pictures/private 1.png" alt="">
+                <img class="icons_services" src="pictures/private 1.png" alt="">
                 <p class="P_box">Lorem ipsum <br>
                     dolor sit amet,<br>
                     consec adipiscing <br>
                     elit ut aliquam</p>
             </div>
             <div class="box box3">
-                <img class="icons_services" src="/pictures/counting 1.png" alt="">
+                <img class="icons_services" src="pictures/counting 1.png" alt="">
                 <p class="P_box">Lorem ipsum <br>
                     dolor sit amet, <br>
                     consec adipiscing <br>
@@ -70,7 +61,7 @@
 <!------------------------ second section --------------------->
     <div class="second_section d-flex justify-content-around justify-content-xl-around">
             <div class="boxs">
-                <img class="img1" src="/pictures/P1150260 1.png" alt="">
+                <img class="img1" src="pictures/P1150260 1.png" alt="">
             <p class="p1">Lorem ipsum dolor <br>
                 sit amet</p>
             <p class="p2">Lorem ipsum dolor sit amet, <br>
@@ -78,21 +69,21 @@
                 aliquam, purus sit amet luctus <br>
                 venenatis, lectus magna fringilla <br>
                 urna, porttitor</p>
-                <button class="bton">FIND A GUIDE</button>
+                <a href="guides.php"><button class="bton">FIND A GUIDE</button></a>
             </div>
             <div class="boxs">
-                <img class="img2" src="/pictures/P1150395 1.png" alt="">
+                <img class="img2" src="pictures/P1150395 1.png" alt="">
             </div>
             <div class="boxs">
                 <p class="p3">Lorem ipsum <br>
                     dolor sit <br>
                                 amet</p>
-                <img class="img3" src="/pictures/P1150265 1.png" alt="">
+                <img class="img3" src="pictures/P1150265 1.png" alt="">
             </div> 
     </div>  
 <!------------------------ testimonials ------------------------>
     <section class="testimonial">
-            <img class="img_testimonial" src="/pictures/Group 4.png" alt="">
+            <img class="img_testimonial" src="pictures/Group 4.png" alt="">
         <div class="numbers d-flex justify-content-around justify-content-xl-around">
             <div class="nubr1">
                 <p class="P_numbr">250</p>
@@ -115,7 +106,7 @@
         <div class="carousel-inner">
           <div class=" Sliider carousel-item active">
                 <div class="bgImg">
-                    <img class="imgTestimonial" src="/pictures/Group 4 (1).png" alt="">
+                    <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
                 </div>
                 <p class="P1_testimonial">Jony miy1</p>
                 <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
@@ -125,7 +116,7 @@
 
           <div class="Sliider carousel-item">
             <div class="bgImg">
-                <img class="imgTestimonial" src="/pictures/Group 4 (1).png" alt="">
+                <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
             </div>
             <p class="P1_testimonial">Jony miy2</p>
             <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
@@ -135,7 +126,7 @@
 
           <div class="Sliider carousel-item">
             <div class="bgImg">
-                <img class="imgTestimonial" src="/pictures/Group 4 (1).png" alt="">
+                <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
             </div>
             <p class="P1_testimonial">Jony miy3</p>
             <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
@@ -151,27 +142,9 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-<!------------------------ footer ----------------------->
-    <div class="footer">
-        <a href="#"><img class="Logofooter" src="pictures/Logo.png" alt=""></a>
-        <div class="minifooter">
-            <div class="atm1 atms">
-                <img class="Social_media" src="pictures/icons8-instagram-50 (3).png" alt="">
-                <img class="Social_media" src="pictures/icons8-facebook-50 (2).png" alt="">
-                <img class="Social_media" src="pictures/icons8-twitter-squared-50 (2).png" alt="">
-            </div>
-            <div class="atm2 atms">
-                <a class="atm" href="">ABOUT</a>
-                <a class="atm" href="">CANTACT</a>
-                <a class="atm" href="">GALLERY</a>
-                <a class="atm" href="">LOGIN</a>
-            </div>
-            <div class="atm3 atms">
-                <button class="btnFooter">FIND A GUIDE</button>
-            </div>
-        </div>
-        <p class="copyright">©TangierGuides2022 </p>
-    </div>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php
+include "footer.php";
+?>
