@@ -37,7 +37,7 @@ if(isset($_REQUEST['Guide_Id']))
 </style>
 <body>
 <!--------------- header --------------->
-    <form method="POST" action="" >
+    <form class="headerBG"method="POST" action="" >
         <div class="header_profile">
             <div class="box_description">
                 <p class="full_name"><?php echo $row["Full_Name"]?></p>
@@ -49,7 +49,7 @@ if(isset($_REQUEST['Guide_Id']))
                     <img class="img_profil" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                 </div>
             </div>
-<!------------------------------- info -------------------------------->
+        <!------------------------- info -------------------------------->
             <div class="Rows">
                 <div class="row">
                     <div class="col-md ">
