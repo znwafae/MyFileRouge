@@ -19,7 +19,6 @@ include "navbar.php";
     @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 </style>
 <body>
-
 <!--------------- header about --------------->
     <div>
         <img class="img_header2" src="pictures/Rectangle 37.png" alt="">
@@ -76,7 +75,7 @@ include "navbar.php";
                 <div class="hover_profile">
                     <img class="img_guide" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                     <div class="hover_btn">
-                        <a href="profile.php"><button class="btn_profile">view the profile</button></a>
+                        <a href="profile.php?Guide_Id=<?php echo $row["Guide_Id"] ?>"><button class="btn_profile">view the profile</button></a>
                     </div>
                 </div>
                 <?php

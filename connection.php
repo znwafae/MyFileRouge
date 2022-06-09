@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
-$database = "myfilerouge"; 
+$database = "tangier_guides"; 
    // Create connection 
 $conn = mysqli_connect($servername, $username, $password,$database);   
 // Check connection

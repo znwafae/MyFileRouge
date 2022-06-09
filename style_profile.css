@@ -1,63 +1,76 @@
 /***************** giude ***************/
 /* headar */
+.header_profile{
+    width: 90%;
+    margin-left: 73px;
+    background: linear-gradient( 
+        to LEFT,
+        #C5D8D8 70%, 
+        #C5D8D8 50%, 
+        #FDECE1 50%, 
+        #FDECE1 100% );
+}
 .box_img{ 
-    width: 411px;
-    height: 449px;
-    margin-left: 174px;
-    margin-top: 4px;
+    width: 347px;
+    height: 366px;
+    margin-left: 175px;
+    margin-top: 12px;
     border: 5px solid #C5D8D8;
 }
 .img_profil{
-    width: 377px;
-    height: 414px;
-    margin-left: 12px;
-    margin-top: 11px;
+    width: 319px;
+    height: 337px;
+    margin-left: 9px;
+    margin-top: 9px;
     background-color: #63a8a8;
 }
-.full_name{
-    margin-top: 38px;
+.full_name {
+    margin-top: 15px;
     font-family: 'Italiana';
     color: #003838;
-    font-size: 33px;
+    font-size: 25px;
     text-align: center;
 }
-.description{
+.description {
+    width: 80%;
     color: #000000;
-    font-size: 19px;
+    font-size: 15px;
     text-align: center;
+    margin-left: 59px;
 }
 .btn_description{
     background: #E2B595;
-    width: 246px;
-    height: 34px;
+    width: 208px;
+    height: 28px;
     color: #5E5D5D;
     font-size: 16px;
     text-align: center;
     border: none;
-    margin-left: 153px;
+    margin-left: 144px;
 }
 .box_description{
-    width: 541px;
-    height: 272px;
+    width: 474px;
+    height: 211px;
     position: absolute;
     top: 199px;
     left: 534px;
     background: #FDECE1;
+    border-radius: 18px;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 } 
 /* info guide */
 .info_guide{
     background: #FDECE1;
     width: 100%;
-    height: 319px;
+    height: 372px;
     margin-top: 55px;
 }
 .bg_info{
     background: #C5D8D8;
     width: 708px;
-    height: 122px;
+    height: 332px;
     position: absolute;
-    top: 664px;
+    top: 655px;
     left: 131px;
 }
 .col-md p{
@@ -69,13 +82,21 @@
     color: #5E5D5D;
 }
 .Rows{
-    margin-left: 50px;
+    margin-left: 540px;
+    margin-top: -67px;
 }
-.bg_language{
+.bg_language {
+    width: 200px;
+    height: 122px;
+    position: absolute;
+    top: 516px;
+    left: 228px;
+}
+.bg_price{
     width: 267px;
     height: 122px;
     position: absolute;
-    top: 664px;
+    top: 828px;
     left: 852px;
     background: #C5D8D8;
 }

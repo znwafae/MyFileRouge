@@ -1,7 +1,28 @@
 <?php
-include "connection.php";
-include "navbar.php"; 
+session_start();
+require 'connection.php';
+if(isset($_REQUEST['Guide_Id']))
+ {
+    $id = $_REQUEST['Guide_Id'];
+    // returne language
+    $sqlSelect_L ="SELECT language.Name
+    FROM guide INNER JOIN guide_language ON guide.Guide_Id=guide_language.Guide_Id 
+    INNER JOIN language ON guide_language.Language_Id=language.Language_Id
+    WHERE guide.Guide_Id='$id'";
+    //  returne info 
+    $sqlSelect = "SELECT * FROM `guide` WHERE Guide_Id = '$id' "; 
+    // returne address info
+    $sqlSelect = "SELECT * FROM `address`
+    INNER JOIN `guide`
+    ON `address`.`Address_Id` = `guide`.`Address_Id`
+    WHERE Guide_Id = '$id' " ;
+    $result_L = $conn->query($sqlSelect_L);
+    $row_L = $result_L -> fetch_array();  
+    $result = $conn->query($sqlSelect);
+    $row = $result -> fetch_array();  
+}
 ?>
+<?php include "navbar.php";?>
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
@@ -14,32 +35,28 @@ include "navbar.php";
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 </style>
-</body>
+<body>
 <!--------------- header --------------->
+    <form method="POST" action="" >
         <div class="header_profile">
             <div class="box_description">
-                <p class="full_name">Wafae Zouini</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur <br>
-                    adipiscing elit ut aliquam, purus <br>
-                   sit amet luctus venenatis</p>
+                <p class="full_name"><?php echo $row["Full_Name"]?></p>
+                <p class="description"><?php echo $row["Description"]?></p>
                    <button class="btn_description">BOOK NOW</button>
             </div>
             <div class="box_img">
                 <div >
-                    <img class="img_profil" src="pictures/Rectangle 129.png" alt="">
+                    <img class="img_profil" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                 </div>
             </div>
-        </div>
-<!------------------- info --------------------------->
-    <div class="info_guide">
-        <div class="bg_info">
+<!------------------------------- info -------------------------------->
             <div class="Rows">
                 <div class="row">
                     <div class="col-md ">
                         <p>Phone Number :</p>
                     </div>
                     <div class="col-md-8">
-                        <p>0648752196</p>
+                        <p><?php echo $row["Phone"]?></p>
                     </div>  
                 </div>
                 <div class="row">
@@ -47,15 +64,39 @@ include "navbar.php";
                         <p>Email :</p>
                     </div>
                     <div class="col-md-8">
-                        <p>nahid@gmail.com</p>
+                        <p><?php echo $row["Email"]?></p>
                     </div>  
                 </div>
                 <div class="row">
                     <div class="col-md">
+                        <p>Birthday :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Birthdate"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
                         <p>Address :</p>
                     </div>
                     <div class="col-md-8">
-                        <p>Lorem ipsum dolor 40sit</p>
+                        <p><?php echo $row["Adress"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>City :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["City"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Country :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Country"]?></p>
                     </div>  
                 </div>
             </div>
@@ -66,14 +107,117 @@ include "navbar.php";
                     <div class="col-md ">
                         <p>language :</p>
                     </div>
+
                     <div class="col-md">
-                        <p>English</p>
-                        <p>English</p>
-                        <p>English</p>
+                        <?php while ($row_L = mysqli_fetch_assoc($result_L)): ?>
+                            <p><?php echo $row_L["Name"]?></p>
+                        <?php
+                        endwhile
+                        ?>
                     </div>  
                 </div>
             </div>
-        </div>°
+        </div>
+    </form>
+<!------------------- info --------------------------->
+    <!-- <div class="info_guide">
+        <div class="bg_info">
+            <div class="Rows">
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Phone Number :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Phone"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <p>Email :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Email"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <p>Birthday :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Birthdate"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Address :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Adress"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Adress_Bis :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Adress_Bis"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Post_Code :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Post_Code"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>City :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["City"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Country :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p><?php echo $row["Country"]?></p>
+                    </div>  
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="bg_language">
+            <div class="language">
+                <div class="row">
+                    <div class="col-md ">
+                        <p>language :</p>
+                    </div>
+
+                    <div class="col-md">
+                        <?php while ($row_L = mysqli_fetch_assoc($result_L)): ?>
+                            <p><?php echo $row_L["Name"]?></p>
+                        <?php
+                        endwhile
+                        ?>
+                    </div>  
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="bg_price">
+            <div class="language">
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Price :</p>
+                    </div>
+                    <div class="col-md">
+                        <p><?php echo $row["Price"]?></p>
+                    </div>  
+                </div>
+            </div>
+        </div> -->
     </div>
 </body>
 </html>
