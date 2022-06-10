@@ -1,18 +1,19 @@
 /************** cantact **************/
 .background_image{
+    height: 41pc;
     width: 100%;
     margin-top: 15px;
 }
-.cantact_form{
+.login_form{
     position: absolute;
-    top: 264px;
+    top: 194px;
     left: 52px;
     width: 90%;
     height: 541px;
     background: #ffffff;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
-.Cantact_Us{
+.login{
     font-family: 'Italiana', serif;
     font-size: 39px;
     color: #003838;
@@ -29,7 +30,7 @@
     width: 244px;
     height: 33px;
 }
-.cantact{
+.logiin{
     width: 500px;
     margin-top: 65px;
     margin-left: 105px;
@@ -49,13 +50,13 @@
     border: 0.5px solid #969696;
     outline: none;
 }
-.copyright_cantact{
+.copyright_login{
     color: #837E7E;
     font-size: 12px;
     text-align: center;
     margin-top: 76px;
 }
-.box_info{
+.box_cantact{
     margin-left: 739px;
     margin-top: -463px;
     width: 340px;
@@ -63,33 +64,33 @@
     background: #C5D8D8;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
-.P_info{
+.cantact_us{
     color: #003838;
     font-family: 'Italiana';
     font-size: 39px;
     text-align: center;
 }
-.info{
+.cantact{
     display: flex;
     margin-left: 21%;
     margin-top: 73px;
 }
-.info_icons{
+.cantact_icons{
     flex-grow: 1;
 }
-.infos_p{
+.cantactP{
     flex-grow: 8;
 }
-.icon_info{
+.icon_cantact{
     margin-bottom: 20px;
     width: 25px;
 }
-.info_p{
+.cantact_p{
     margin-bottom: 24px;
     font-size: 15px;
     color: #5E5D5D;
 }
-.atm_info{
+.atm_cantact{
     position: absolute;
     top: 387px;
     right: 183px;

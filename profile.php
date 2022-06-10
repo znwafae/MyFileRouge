@@ -42,15 +42,67 @@ if(isset($_REQUEST['Guide_Id']))
             <div class="box_description">
                 <p class="full_name"><?php echo $row["Full_Name"]?></p>
                 <p class="description"><?php echo $row["Description"]?></p>
-                   <button class="btn_description">BOOK NOW</button>
+                   
             </div>
             <div class="box_img">
                 <div >
                     <img class="img_profil" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                 </div>
             </div>
-        <!------------------------- info -------------------------------->
-            <div class="Rows">
+        <!-- ----------------------- info ------------------------------>
+        <div class="Guide_Information">
+            <p class="title_Information" >Guide Information</p>
+            <p class="text_Information">Ayoub, He's calm,  patient, and a good listener.
+                He was a grade school teacher when he was younger, 
+                and it shows. He taught us so much about the history, 
+                culture, and society of Morocco and especially Tangiers.
+                He took us to great shopping opportunities without us feeling</p>
+            <p class="title_Information">Guide Cantact</p>
+            <div  class="Rows">
+                <div class="row">
+                    <div class="col-md ">
+                        <p>Phone Number :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="phon"><?php echo $row["Phone"]?></p>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <p>Email :</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="email"><?php echo $row["Email"]?></p>
+                </div>  
+            </div>
+        </div>
+        <div class="atms_Guide">
+                <img class="Social_guide" src="pictures/icons8-instagram-50 (3).png" alt="">
+                <img class="Social_guide" src="pictures/icons8-facebook-50 (2).png" alt="">
+            </div>
+    </form>
+    <form action="" class="book_tour">
+        <p class="title_book">BOOK THIS TOUR</p>
+        <div>
+            <label for="" class="Tour_Price">Tour Price:</label>
+            <select class="select_Price form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        </div>
+        
+    </form>
+
+
+
+
+
+
+
+
+            <!-- <div class="Rows">
                 <div class="row">
                     <div class="col-md ">
                         <p>Phone Number :</p>
@@ -117,8 +169,8 @@ if(isset($_REQUEST['Guide_Id']))
                     </div>  
                 </div>
             </div>
-        </div>
-    </form>
+        </div> -->
+    
 <!------------------- info --------------------------->
     <!-- <div class="info_guide">
         <div class="bg_info">
@@ -224,3 +276,5 @@ if(isset($_REQUEST['Guide_Id']))
 <?php
 include "footer.php";
 ?>
+
+<!-- <button class="btn_description">BOOK NOW</button> -->
