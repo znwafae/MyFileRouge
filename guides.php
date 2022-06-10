@@ -46,23 +46,23 @@ include "navbar.php";
             <p class="Filter_by">Filter Search By</p>
             <div class="By_langauge">By Langauge</div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="" id="">
+                <input type="submit" sclass="Check form-check-input" type="checkbox" value="" id="">
                 <label class="Check_label form-check-label">Arabic </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="" id="">
+                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
                 <label class="Check_label form-check-label">French  </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="" id="">
+                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
                 <label class="Check_label form-check-label">English </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="" id="">
+                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
                 <label class="Check_label form-check-label">Spanish  </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="" id="">
+                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
                 <label class="Check_label form-check-label">Korean  </label>
             </div>
             <div class="By_langauge">By Date</div>

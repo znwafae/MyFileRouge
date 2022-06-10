@@ -42,66 +42,42 @@ if(isset($_REQUEST['Guide_Id']))
             <div class="box_description">
                 <p class="full_name"><?php echo $row["Full_Name"]?></p>
                 <p class="description"><?php echo $row["Description"]?></p>
-                   <button class="btn_description">BOOK NOW</button>
+                   
             </div>
             <div class="box_img">
                 <div >
                     <img class="img_profil" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                 </div>
             </div>
-        <!------------------------- info -------------------------------->
-            <div class="Rows">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Phone Number :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Phone"]?></p>
-                    </div>  
+        </div>
+        <div>
+            <p>Guide Information</p>
+            <p>Ayoub, He's calm,  patient,
+                 and a good listener.
+                  He was a grade school teacher when he was younger,
+                   and it shows. He taught us so much about the history,
+                    culture, and society of Morocco and especially Tangiers.
+                     He took us to great shopping opportunities without us feeling</p>
+            <p>Guide Cantact</p>
+            <div class="row">
+                <div class="col-md ">
+                    <p>Phone Number :</p>
                 </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Email :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Email"]?></p>
-                    </div>  
+                <div class="col-md-8">
+                    <p><?php echo $row["Phone"]?></p>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <p>Email :</p>
                 </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Birthday :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Birthdate"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Address :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Adress"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>City :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["City"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Country :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Country"]?></p>
-                    </div>  
-                </div>
+                <div class="col-md-8">
+                    <p><?php echo $row["Email"]?></p>
+                </div>  
             </div>
         </div>
-        <div class="bg_language">
+    </form>
+    <div class="bg_language">
             <div class="language">
                 <div class="row">
                     <div class="col-md ">
@@ -118,7 +94,6 @@ if(isset($_REQUEST['Guide_Id']))
                 </div>
             </div>
         </div>
-    </form>
 <!------------------- info --------------------------->
     <!-- <div class="info_guide">
         <div class="bg_info">
@@ -218,6 +193,7 @@ if(isset($_REQUEST['Guide_Id']))
                 </div>
             </div>
         </div> -->
+        <!-- <button class="btn_description">BOOK NOW</button> -->
     </div>
 </body>
 </html>
