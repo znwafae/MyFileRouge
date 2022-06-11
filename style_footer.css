@@ -1,11 +1,11 @@
 /*********************** footer *****************/
 .footer{
-    text-align: center;
     height: 242px;
     margin-top: 80px;
 }
 .Logofooter{
     width: 290px;
+    margin-left: 484px;
     height: 100px;
 }
 .minifooter{
@@ -14,17 +14,21 @@
     margin-left: 2%;
     width: 96%;
     right: 150px;
-    height: 110px;
 }
 .atm1{
+    margin-left: 65px;
     flex-grow: 2;
 }
 .atm2{
+    margin-left: 45px;
+    margin-top: 65px;
     flex-grow: 2;
     text-decoration: none;
 }
 .atm3{
     flex-grow: 1;
+    margin-left: 52px;
+    margin-top: 56px;
 }
 .btnFooter{
     background-color: #E2B595;
@@ -35,22 +39,32 @@
 }
 .atm{
     margin-left: 50px;
-    text-decoration: none;
+    text-decoration: none; 
     color: #5E5D5D;
 }
 .atm:hover {
-    color: #63a8a8;
+    color: #a5a5a5;
 }
 .Social_media{
-    width: 39px;
+    width: 34px;
 }
 .copyright{
     margin-top: 10px;
     font-size: 11px;
     color: #5E5D5D;
+    text-align: center; 
 }
 .atms{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    margin-top: 20px;
+    margin-left: 143px;
+}
+.info_cantact{
+    color: #5E5D5D;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.title_cantact{
+    color: #003838;
+    margin-top: 19px;
+    font-size: 20px;
 }
