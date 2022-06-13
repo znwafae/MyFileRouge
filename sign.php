@@ -8,7 +8,7 @@ include "navbar.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_cantact.css">
+    <link rel="stylesheet" href="style_sign.css">
     <title>Document</title>
 </head>
 <style>
@@ -25,15 +25,16 @@ include "navbar.php";
                     <button type="button" class="toggle_btn" onclick="signUp()">sign up</button>
                 </div>
                 <form action="" id="login" class="input_group">
-                    <input type="text" class="input_field" placeholder="user id">
+                    <input type="text" class="input_field" placeholder="Email">
                     <input type="text" class="input_field" placeholder="password">
-                    <button type="submit" class="submit_btn">Log In</button>
+                    <button type="submit" class="submit_btn" >Log In</button>
                 </form>
-                <form action="" id="signUp" class="input_group">
-                    <input type="text" class="input_field" placeholder="user id">
-                    <input type="text" class="input_field" placeholder="email id">
-                    <input type="text" class="input_field" placeholder="password">
-                    <button type="submit" class="submit_btn">Sign Up</button>
+                <form action="server.php" id="signUp" class="input_group" method = "POST">
+                    <input type="text" class="input_field" placeholder="Full Name" name="Full_Name">
+                    <input type="text" class="input_field" placeholder="Phone" name="Phone">
+                    <input type="text" class="input_field" placeholder="email" name="Email">
+                    <input type="text" class="input_field" placeholder="password" name="Password">
+                    <button type="submit" class="submit_btn" name="signUp">Sign Up</button>
                 </form>
             </div>
         </div>

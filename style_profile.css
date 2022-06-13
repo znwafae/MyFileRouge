@@ -75,16 +75,16 @@
     font-size: 17px;
     color: #5E5D5D;
 }
-.col-md p{
+.colMd p{
     color: #003838;
     font-size: 17px; 
 }
-.col-md-8 p{
+.col8 p{
     font-size: 18px;
     color: #5E5D5D;
 }
 .Guide_Information{
-    width: 53%;
+    width: 54%;
     margin-left: 85px;
     margin-top: 33px;
 }
@@ -106,7 +106,7 @@
 .language{
     margin-left: 20px;
 }
-.col-md-8 {
+.col8{
     flex: 0 0 auto;
     width: 76.666667% !important;
 }
@@ -142,6 +142,7 @@
     margin-left: 23px;
     height: 36px;
     border-radius: 10px !important;
+    MARGIN-TOP: 25px;
 }
 .title_book{
     color: #003838;
@@ -152,6 +153,6 @@
 }
 .Tour_Price{
     font-size: 17px;
-    color: #4c9c9c;
+    color: #003838;
     margin-left: 23px;
 }

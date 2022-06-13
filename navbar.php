@@ -19,7 +19,7 @@
                 <a href="home.php"><img src="pictures/Logo.png" alt="logo" class="imgLogo" /></a>
                 <a href="home.php">HOME</a>
                 <a href="cantact.php">CANTACT</a>
-                <a href="">LOGIN</a>
+                <a href="sign.php">LOGIN</a>
         </div> 
     </nav>
 </body>

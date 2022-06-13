@@ -60,18 +60,18 @@ if(isset($_REQUEST['Guide_Id']))
             <p class="title_Information">Guide Cantact</p>
             <div  class="Rows">
                 <div class="row">
-                    <div class="col-md ">
+                    <div class="col-md colMd">
                         <p>Phone Number :</p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col8">
                         <p class="phon"><?php echo $row["Phone"]?></p>
                     </div>  
                 </div>
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md colMd">
                         <p>Email :</p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col8">
                         <p class="email"><?php echo $row["Email"]?></p>
                 </div>  
             </div>
@@ -83,25 +83,17 @@ if(isset($_REQUEST['Guide_Id']))
     </form>
     <form action="" class="book_tour">
         <p class="title_book">BOOK THIS TOUR</p>
-        <div>
-            <label for="" class="Tour_Price">Tour Price:</label>
             <select class="select_Price form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        </div>
-        <div>
-            <label for="" class="Tour_Price">Tour Price:</label>
+                <option selected>Tour Price:</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
             <select class="select_Price form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        </div>
-        
+                <option selected>Select a time:</option>
+                <option value="1">One</option>
+                <option value="3">Three</option>
+            </select>
     </form>
 
 
