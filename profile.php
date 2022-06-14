@@ -11,11 +11,6 @@ if(isset($_REQUEST['Guide_Id']))
     WHERE guide.Guide_Id='$id'";
     //  returne info 
     $sqlSelect = "SELECT * FROM `guide` WHERE Guide_Id = '$id' "; 
-    // returne address info
-    $sqlSelect = "SELECT * FROM `address`
-    INNER JOIN `guide`
-    ON `address`.`Address_Id` = `guide`.`Address_Id`
-    WHERE Guide_Id = '$id' " ;
     $result_L = $conn->query($sqlSelect_L);
     $row_L = $result_L -> fetch_array();  
     $result = $conn->query($sqlSelect);
@@ -52,26 +47,22 @@ if(isset($_REQUEST['Guide_Id']))
         <!-- ----------------------- info ------------------------------>
         <div class="Guide_Information">
             <p class="title_Information" >Guide Information</p>
-            <p class="text_Information">Ayoub, He's calm,  patient, and a good listener.
-                He was a grade school teacher when he was younger, 
-                and it shows. He taught us so much about the history, 
-                culture, and society of Morocco and especially Tangiers.
-                He took us to great shopping opportunities without us feeling</p>
+            <p class="text_Information"><?php echo $row["Information"]?></p>
             <p class="title_Information">Guide Cantact</p>
             <div  class="Rows">
                 <div class="row">
-                    <div class="col-md colMd">
+                    <div class="col-md ">
                         <p>Phone Number :</p>
                     </div>
-                    <div class="col-md-8 col8">
+                    <div class="col-md-8 ">
                         <p class="phon"><?php echo $row["Phone"]?></p>
                     </div>  
                 </div>
                 <div class="row">
-                    <div class="col-md colMd">
+                    <div class="col-md ">
                         <p>Email :</p>
                     </div>
-                    <div class="col-md-8 col8">
+                    <div class="col-md-8 ">
                         <p class="email"><?php echo $row["Email"]?></p>
                 </div>  
             </div>
@@ -82,7 +73,7 @@ if(isset($_REQUEST['Guide_Id']))
             </div>
     </form>
     <form action="" class="book_tour">
-        <p class="title_book">BOOK THIS TOUR</p>
+        <p class="title_book">BOOK THIS GUIDE</p>
             <select class="select_Price form-select" aria-label="Default select example">
                 <option selected>Tour Price:</option>
                 <option value="1">One</option>
@@ -94,6 +85,41 @@ if(isset($_REQUEST['Guide_Id']))
                 <option value="1">One</option>
                 <option value="3">Three</option>
             </select>
+            <div class="date">
+                <div class="row">
+                    <div class="col-md ">
+                        <p class="language_P">Date :</p>
+                    </div>
+                    <div class="col-md">
+                        <p class="date_P">00/00/0000</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="location">
+                <div class="row">
+                    <div class="col-md ">
+                        <p class="language_P">Location :</p>
+                    </div>
+                    <div class="col-md">
+                        <a href=""><p class="locationP date_P">Show location on map </p></a>
+                    </div>  
+                </div>
+            </div>
+            <div class="language">
+                <div class="row">
+                    <div class="col-md ">
+                        <p class="language_P">language :</p>
+                    </div>
+                    <div class="col-md">
+                        <?php while ($row_L = mysqli_fetch_assoc($result_L)): ?>
+                            <p class="date_P"><?php echo $row_L["Name"]?></p>
+                        <?php
+                        endwhile
+                        ?>
+                    </div>  
+                </div>
+            </div>
+            <button class="btn_book">BOOK NOW</button>
     </form>
 
 
@@ -104,54 +130,12 @@ if(isset($_REQUEST['Guide_Id']))
 
 
             <!-- <div class="Rows">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Phone Number :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Phone"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Email :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Email"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Birthday :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Birthdate"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Address :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Adress"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>City :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["City"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Country :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Country"]?></p>
-                    </div>  
-                </div>
+                
+                
+                
+                
+                
+                
             </div>
         </div>
         <div class="bg_language">

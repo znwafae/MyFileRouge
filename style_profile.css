@@ -75,11 +75,11 @@
     font-size: 17px;
     color: #5E5D5D;
 }
-.colMd p{
+.col-md p{
     color: #003838;
     font-size: 17px; 
 }
-.col8 p{
+.col-md-8 p{
     font-size: 18px;
     color: #5E5D5D;
 }
@@ -103,10 +103,34 @@
     left: 852px;
     background: #C5D8D8;
 }
-.language{
-    margin-left: 20px;
+.language {
+    width: 199px;
+    margin-left: 35px;
 }
-.col8{
+.date {
+    margin-top: 14px;
+    width: 200px;
+    margin-left: 35px;
+}
+.location {
+    width: 376px;
+    margin-left: 35px;
+}
+.locationP{
+    margin-left: -89px;
+}
+.locationP:hover {
+    color: #3e9eb6 !important;
+}
+.language_P{
+    font-size: 18px !important;
+    color: #003838 !important;
+}
+.date_P{
+    color: #5E5D5D !important;
+    font-size: 15px !important;
+}
+.col-md-8{
     flex: 0 0 auto;
     width: 76.666667% !important;
 }
@@ -130,7 +154,7 @@
 }
 .book_tour{
     width: 330px;
-    height: 442px;
+    height: 470px;
     position: absolute;
     left: 726px;
     top: 393px;
@@ -155,4 +179,12 @@
     font-size: 17px;
     color: #003838;
     margin-left: 23px;
+}
+.btn_book{
+    margin-left: 53px;
+    background-color: #E2B595;
+    width: 228px;
+    height: 36px;
+    border: none;
+    color: #5E5D5D;
 }
