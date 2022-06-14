@@ -29,17 +29,6 @@
     margin-left: 174px;
     margin-top: -44px;
 }
-.btn_slogan2{
-    font-size: 14px;
-    width: 237px;
-    height: 28px;
-    position: absolute;
-    left: 289px;
-    top: 79px;
-    background-color: #E2B595;
-    border: none;
-    color: #5E5D5D;
-}
     /**** power guides ***/ 
 .power{
     height: 203px;
@@ -99,7 +88,7 @@
     width: 227px;
     height: 36px;
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: 23px;
 }
 /* *** profiles ***/ 
 .grid-container {
@@ -147,4 +136,16 @@
     margin-left: 351px;
     MARGIN-TOP: 15px;
     height: 68px;
+}
+.btn_filter{
+    font-size: 14px;
+    width: 126px;
+    height: 28px;
+    position: absolute;
+    left: 289px;
+    background-color: #E2B5A9;
+    border: none;
+    color: #5E5D5D;
+    margin-left: -215px;
+    margin-top: 113px;
 }

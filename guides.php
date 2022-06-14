@@ -3,7 +3,20 @@ include "connection.php";
 include "navbar.php";
      $sql = "SELECT * FROM guide";
      $result = mysqli_query($conn, $sql);
-     
+     if(isset($_POST['filtre']))
+     {     
+        $date=$_POST['day_tour']; 
+        $sql="SELECT *
+        FROM guide
+        WHERE Guide_Id NOT IN (
+            SELECT guide.Guide_Id
+            FROM guide 
+            inner join booking on booking.Guide_Id=guide.Guide_Id
+            inner join meeting on meeting.Booking_Id=booking.Booking_Id
+            WHERE meeting.Date = '$date'
+        )";
+             $result = mysqli_query($conn, $sql);
+     }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,34 +54,38 @@ include "navbar.php";
         </p>
     </div>
 <!------------------------- Search -------------------->
+    
     <div class="find_guide">
+        <form action="guides.php" method="post">
         <div class="Filter_Search">
             <p class="Filter_by">Filter Search By</p>
             <div class="By_langauge">By Langauge</div>
             <div class="form-check">
-                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
+                <input class="Check form-check-input" type="checkbox" value="Arabic">
                 <label class="Check_label form-check-label">Arabic </label>
             </div>
             <div class="form-check">
-                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
+                <input class="Check form-check-input" type="checkbox" value="French">
                 <label class="Check_label form-check-label">French  </label>
             </div>
             <div class="form-check">
-                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
+                <input class="Check form-check-input" type="checkbox" value="English">
                 <label class="Check_label form-check-label">English </label>
             </div>
             <div class="form-check">
-                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
+                <input class="Check form-check-input" type="checkbox" value="Spanish">
                 <label class="Check_label form-check-label">Spanish  </label>
             </div>
             <div class="form-check">
-                <input type="submit" class="Check form-check-input" type="checkbox" value="" id="">
+                <input class="Check form-check-input" type="checkbox" value="Korean">
                 <label class="Check_label form-check-label">Korean  </label>
             </div>
             <div class="By_langauge">By Date</div>
             <input class="input_date" type="date" id="day_tour" name="day_tour">
+            <button class="btn_filter"  value="filtre" name="filtre">submit</button>
         </div>
-<!-------------------------- view profil ---------------------------->
+        </form>
+        <!-------------------------- view profil ---------------------------->
         <div class="view_profile">
             <div class="grid-container">
                 <?php while ($row = mysqli_fetch_assoc($result)): ?>

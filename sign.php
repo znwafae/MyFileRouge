@@ -1,6 +1,26 @@
 <?php
 include "connection.php";
 include "navbar.php"; 
+if(isset($_POST['signUp']))
+{
+    $fullname = $_POST["Full_Name"];
+    $country = $_POST["Country"];
+    $city = $_POST["City"];
+    $phone = $_POST["Phone"];
+    $email = $_POST["Email"];
+    $password = $_POST["Password"];
+
+    $stmt = $conn->prepare("SELECT Email FROM user where Email='".$email."'");
+    $stmt->execute();
+    $result = $stmt->get_result();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    $row_in4    = $result->fetch_assoc();
+    if($row_in4 == NULL){
+        $req = "INSERT INTO user (Full_Name, Country, City, Phone, Email, Password)
+         values ('$fullname','$country','$city','$phone','$email','$password')";
+        $res = mysqli_query($conn, $req);
+        header("location: home.php");
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,13 +44,15 @@ include "navbar.php";
                     <button type="button" class="toggle_btn" onclick="login()">Log In</button>
                     <button type="button" class="toggle_btn" onclick="signUp()">sign up</button>
                 </div>
-                <form action="" id="login" class="input_group">
-                    <input type="text" class="input_field" placeholder="Email">
-                    <input type="text" class="input_field" placeholder="password">
-                    <button type="submit" class="submit_btn" >Log In</button>
+                <form method = "POST" action="server.php" id="login" class="input_group">
+                    <input type="text" class="input_field" placeholder="Email" name="Email">
+                    <input type="text" class="input_field" placeholder="password" name="Password">
+                    <button type="submit" class="submit_btn" name="login">Log In</button>
                 </form>
-                <form action="server.php" id="signUp" class="input_group" method = "POST">
+                <form action="sign.php" id="signUp" class="input_group" method = "POST">
                     <input type="text" class="input_field" placeholder="Full Name" name="Full_Name">
+                    <input type="text" class="input_field" placeholder="country" name="Country">
+                    <input type="text" class="input_field" placeholder="city" name="City">
                     <input type="text" class="input_field" placeholder="Phone" name="Phone">
                     <input type="text" class="input_field" placeholder="email" name="Email">
                     <input type="text" class="input_field" placeholder="password" name="Password">

@@ -36,40 +36,40 @@ if(isset($_REQUEST['Guide_Id']))
         <div class="header_profile">
             <div class="box_description">
                 <p class="full_name"><?php echo $row["Full_Name"]?></p>
-                <p class="description"><?php echo $row["Description"]?></p>
-                   
+                <p class="description"><?php echo $row["Description"]?></p>    
             </div>
             <div class="box_img">
-                <div >
+                <div>
                     <img class="img_profil" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                 </div>
             </div>
-        <!-- ----------------------- info ------------------------------>
-        <div class="Guide_Information">
-            <p class="title_Information" >Guide Information</p>
-            <p class="text_Information"><?php echo $row["Information"]?></p>
-            <p class="title_Information">Guide Cantact</p>
-            <div  class="Rows">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Phone Number :</p>
+            <!------------------------- info ------------------------------>
+            <div class="Guide_Information">
+                <p class="title_Information" >Guide Information</p>
+                <p class="text_Information"><?php echo $row["Information"]?></p>
+                <p class="title_Information">Guide Cantact</p>
+                <div  class="Rows">
+                    <div class="row">
+                        <div class="col-md ">
+                            <p>Phone Number :</p>
+                        </div>
+                        <div class="col-md-8 ">
+                            <p class="phon"><?php echo $row["Phone"]?></p>
+                        </div>  
                     </div>
-                    <div class="col-md-8 ">
-                        <p class="phon"><?php echo $row["Phone"]?></p>
-                    </div>  
+                    <div class="row">
+                        <div class="col-md ">
+                            <p>Email :</p>
+                        </div>
+                        <div class="col-md-8 ">
+                            <p class="email"><?php echo $row["Email"]?></p>
+                        </div>  
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Email :</p>
-                    </div>
-                    <div class="col-md-8 ">
-                        <p class="email"><?php echo $row["Email"]?></p>
-                </div>  
-            </div>
-        </div>
-        <div class="atms_Guide">
-                <img class="Social_guide" src="pictures/icons8-instagram-50 (3).png" alt="">
-                <img class="Social_guide" src="pictures/icons8-facebook-50 (2).png" alt="">
+                <div class="atms_Guide">
+                    <img class="Social_guide" src="pictures/icons8-instagram-50 (3).png" alt="">
+                    <img class="Social_guide" src="pictures/icons8-facebook-50 (2).png" alt="">
+                </div>
             </div>
     </form>
     <form action="" class="book_tour">
@@ -121,145 +121,8 @@ if(isset($_REQUEST['Guide_Id']))
             </div>
             <button class="btn_book">BOOK NOW</button>
     </form>
-
-
-
-
-
-
-
-
-            <!-- <div class="Rows">
-                
-                
-                
-                
-                
-                
-            </div>
-        </div>
-        <div class="bg_language">
-            <div class="language">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>language :</p>
-                    </div>
-
-                    <div class="col-md">
-                        <?php while ($row_L = mysqli_fetch_assoc($result_L)): ?>
-                            <p><?php echo $row_L["Name"]?></p>
-                        <?php
-                        endwhile
-                        ?>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-    
-<!------------------- info --------------------------->
-    <!-- <div class="info_guide">
-        <div class="bg_info">
-            <div class="Rows">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Phone Number :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Phone"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Email :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Email"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <p>Birthday :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Birthdate"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Address :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Adress"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Adress_Bis :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Adress_Bis"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Post_Code :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Post_Code"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>City :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["City"]?></p>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Country :</p>
-                    </div>
-                    <div class="col-md-8">
-                        <p><?php echo $row["Country"]?></p>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="bg_language">
-            <div class="language">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>language :</p>
-                    </div>
-
-                    <div class="col-md">
-                        <?php while ($row_L = mysqli_fetch_assoc($result_L)): ?>
-                            <p><?php echo $row_L["Name"]?></p>
-                        <?php
-                        endwhile
-                        ?>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="bg_price">
-            <div class="language">
-                <div class="row">
-                    <div class="col-md ">
-                        <p>Price :</p>
-                    </div>
-                    <div class="col-md">
-                        <p><?php echo $row["Price"]?></p>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-    </div>
 </body>
 </html>
 <?php
 include "footer.php";
 ?>
-
-<!-- <button class="btn_description">BOOK NOW</button> -->
