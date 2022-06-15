@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require 'connection.php';
 if(isset($_REQUEST['Guide_Id']))
  {
@@ -76,14 +76,17 @@ if(isset($_REQUEST['Guide_Id']))
         <p class="title_book">BOOK THIS GUIDE</p>
             <select class="select_Price form-select" aria-label="Default select example">
                 <option selected>Tour Price:</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">12$ for 1 person</option>
+                <option value="2">17$ for 2 person</option>
+                <option value="3">22$ for 3 person</option>
+                <option value="2">26$ for 4 person</option>
+                <option value="2">30$ for 5 person</option>
             </select>
             <select class="select_Price form-select" aria-label="Default select example">
                 <option selected>Select a time:</option>
-                <option value="1">One</option>
-                <option value="3">Three</option>
+                <option value="1">8:00 PM</option>
+                <option value="3">8:30 PM</option>
+                <option value="3">9:00 PM</option>
             </select>
             <div class="date">
                 <div class="row">

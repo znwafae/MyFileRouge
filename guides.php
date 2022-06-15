@@ -6,6 +6,10 @@ include "navbar.php";
      if(isset($_POST['filtre']))
      {     
         $date=$_POST['day_tour']; 
+        // $sql2="SELECT *
+        // FROM guide INNER JOIN guide_language ON guide.Guide_Id=guide_language.Guide_Id
+        //     INNER JOIN language ON guide_language.Language_Id=language.Language_Id
+        //     WHERE language.Name=""";
         $sql="SELECT *
         FROM guide
         WHERE Guide_Id NOT IN (

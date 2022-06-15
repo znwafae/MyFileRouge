@@ -19,8 +19,19 @@
                 <a href="home.php"><img src="pictures/Logo.png" alt="logo" class="imgLogo" /></a>
                 <a href="home.php">HOME</a>
                 <a href="cantact.php">CANTACT</a>
-                <a href="sign.php">LOGIN</a>
+                <?php 
+                    session_start();
+                    if (isset($_SESSION['User_Id'])) {
+
+                ?>
+                    <a onclick="return confirm('Are you sure to logout?')" href='logout.php'>LOGOUT</a>
+                <?php
+                    }else{
+                        echo " <a href='sign.php'>LOGIN</a>";
+                     }
+                ?>
+              
         </div> 
-    </nav>
+</nav>
 </body>
 </html>

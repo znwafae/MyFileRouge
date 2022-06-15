@@ -44,7 +44,7 @@ if(isset($_POST['signUp']))
                     <button type="button" class="toggle_btn" onclick="login()">Log In</button>
                     <button type="button" class="toggle_btn" onclick="signUp()">sign up</button>
                 </div>
-                <form method = "POST" action="server.php" id="login" class="input_group">
+                <form method = "POST" action="login.php" id="login" class="input_group">
                     <input type="text" class="input_field" placeholder="Email" name="Email">
                     <input type="text" class="input_field" placeholder="password" name="Password">
                     <button type="submit" class="submit_btn" name="login">Log In</button>

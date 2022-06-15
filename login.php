@@ -1,15 +1,15 @@
 <?php
 include "connection.php";
+session_start();
 if(isset($_POST['login'])){
     $email = $_POST["Email"];
     $password = $_POST["Password"];
-
-    $sql = "select * from user where email='".$email."'AND password='".$password."' limit 1"; 
-    $result = mysql_query($sql);
-
-    if(mysql_num_rows($result)==1){
-        echo"you have successfully logged in";
-        exit();
+    $sql = "SELECT * FROM user WHERE Email ='" . $email . "' AND  Password ='" . $password . "'" ;
+    $result = $conn->query($sql);
+    if($result->num_rows>0){
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+        $_SESSION['User_Id'] = $row["User_Id"];
+        header("location:home.php");
     }
     else{
         echo" you have entered incorrect password";

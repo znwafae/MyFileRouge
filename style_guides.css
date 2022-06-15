@@ -38,12 +38,12 @@
     color: #003838;
     font-family: 'Italiana';
     font-size:32px;
-    margin-left: 24%;
+    margin-left: 25%;
 }
 .text_PowerG{
     color: #000000; 
     font-size: 17px;
-    margin-left: 24%;
+    margin-left: 25%;
 }
 .find_guide{
     display: flex;
@@ -52,8 +52,9 @@
 .Filter_Search{
     flex-grow: 1;
 }
-.view_profile{
+.view_profile {
     flex-grow: 8;
+    MARGIN-LEFT: 52px;
 }
 /*** Search ***/
 .Filter_by{
