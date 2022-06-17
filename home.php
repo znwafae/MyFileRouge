@@ -23,9 +23,7 @@ include "navbar.php";
         </div>
         <div class="box_slogan1">
             <p class="title_slogan1">Tangier Guides</p>
-            <p class="slogan1">Lorem ipsum dolor sit amet, consectetur <br>
-                adipiscing elit ut aliquam, purus <br>
-               sit amet luctus venenatis</p>
+            <p class="slogan1">We're not here to find your guide, we are here to make your trip amazing</p>
                <a href="guides.php"><button class="btn_slogan1">FIND A GUIDE</button></a>
         </div>
         <div class="background"></div>
@@ -37,24 +35,18 @@ include "navbar.php";
         <div class="services d-flex justify-content-around justify-content-xl-around ">
             <div class="box box1">
                 <img class="icons_services" src="pictures/happy 1.png" alt="">
-                <p class="P_box">Lorem ipsum <br>
-                    dolor sit amet,<br>
-                    consec adipiscing <br>
-                    elit ut aliquam</p>
+                <p class="P_box">Get a friendly <br> 
+                and caring service </p>
             </div>
             <div class="box box2">
                 <img class="icons_services" src="pictures/private 1.png" alt="">
-                <p class="P_box">Lorem ipsum <br>
-                    dolor sit amet,<br>
-                    consec adipiscing <br>
-                    elit ut aliquam</p>
+                <p class="P_box"> Competent and <br>
+                 trutsted guides</p>
             </div>
             <div class="box box3">
                 <img class="icons_services" src="pictures/counting 1.png" alt="">
-                <p class="P_box">Lorem ipsum <br>
-                    dolor sit amet, <br>
-                    consec adipiscing <br>
-                    elit ut aliquam</p>
+                <p class="P_box">choose your <br>
+                 own companion </p>
             </div>
         </div>
     </div>
@@ -62,22 +54,20 @@ include "navbar.php";
     <div class="second_section d-flex justify-content-around justify-content-xl-around">
             <div class="boxs">
                 <img class="img1" src="pictures/P1150260 1.png" alt="">
-            <p class="p1">Lorem ipsum dolor <br>
-                sit amet</p>
-            <p class="p2">Lorem ipsum dolor sit amet, <br>
-                consectetur adipiscing elit ut <br> 
-                aliquam, purus sit amet luctus <br>
-                venenatis, lectus magna fringilla <br>
-                urna, porttitor</p>
+            <p class="p1">Find yourself a local </p>
+            <p class="p2">There’s no better way to feel <br> 
+            the heartbeat of a city than <br>
+            discovering it with a knowledgeable <br>
+            local by your side now you can customize <br>
+            a city tour with us </p>
                 <a href="guides.php"><button class="bton">FIND A GUIDE</button></a>
             </div>
             <div class="boxs">
                 <img class="img2" src="pictures/P1150395 1.png" alt="">
             </div>
             <div class="boxs">
-                <p class="p3">Lorem ipsum <br>
-                    dolor sit <br>
-                                amet</p>
+                <p class="p3">Let’s show <br>
+                 you Arround </p>
                 <img class="img3" src="pictures/P1150265 1.png" alt="">
             </div> 
     </div>  
@@ -109,8 +99,8 @@ include "navbar.php";
                     <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
                 </div>
                 <p class="P1_testimonial">Jony miy1</p>
-                <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
-                consectetur adipiscing elit ut</p>     
+                <p class="P2_testimonial">“ Our guides were extremely knowledgeable, friendly, <br>
+                 and fun to be around. ”</p>     
             </div>
 
 
