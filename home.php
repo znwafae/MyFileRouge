@@ -76,16 +76,16 @@ include "navbar.php";
             <img class="img_testimonial" src="pictures/Group 4.png" alt="">
         <div class="numbers d-flex justify-content-around justify-content-xl-around">
             <div class="nubr1">
-                <p class="P_numbr">250</p>
-                <p class="P_title">Lorem ipsum </p>
+                <p class="P_numbr">12</p>
+                <p class="P_title">Guides</p>
             </div>
             <div class="nubr2">
-                <p class="P_numbr">1682</p>
-                <p class="P_title">Lorem ipsum </p>
+                <p class="P_numbr">245</p>
+                <p class="P_title">Visited spots</p>
             </div>
             <div class="nubr3">
-                <p class="P_numbr">4156</p>
-                <p class="P_title">Lorem ipsum </p>
+                <p class="P_numbr">114</p>
+                <p class="P_title">Happy clients</p>
             </div>
         </div>
     </section>
@@ -100,7 +100,7 @@ include "navbar.php";
                 </div>
                 <p class="P1_testimonial">Jony miy1</p>
                 <p class="P2_testimonial">“ Our guides were extremely knowledgeable, friendly, <br>
-                 and fun to be around. ”</p>     
+                and fun to be around. ”</p>     
             </div>
 
 
@@ -109,18 +109,19 @@ include "navbar.php";
                 <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
             </div>
             <p class="P1_testimonial">Jony miy2</p>
-            <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
-            consectetur adipiscing elit ut</p>
+            <p class="P2_testimonial">“ Our guides were extremely knowledgeable, friendly, <br>
+            and fun to be around. ”</p> 
           </div>
 
 
           <div class="Sliider carousel-item">
             <div class="bgImg">
                 <img class="imgTestimonial" src="pictures/Group 4 (1).png" alt="">
-            </div>
+          </div>
             <p class="P1_testimonial">Jony miy3</p>
-            <p class="P2_testimonial">Lorem ipsum dolor sit amet, <br>
-            consectetur adipiscing elit ut</p>               </div>
+            <p class="P2_testimonial">“ Our guides were extremely knowledgeable, friendly, <br>
+            and fun to be around. ”</p> 
+          </div>
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

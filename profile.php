@@ -1,6 +1,18 @@
 <?php
-// session_start();
+session_start();
 require 'connection.php';
+$date = date('Y-m-d');
+$idUSER = $_SESSION['User_Id'];
+$Guide_Id = $_GET['Guide_Id'];
+$Price = $_GET['Price'];
+
+if (isset($_POST['BOOK'])) {
+
+    $bookSql = "INSERT INTO `booking`(`User_Id`, `Guide_Id`, `Date`, `Total`) VALUES ('$idUSER','[value-3]','[value-4]','[value-5]')"; 
+
+    $conn->query($bookSql);
+
+}
 if(isset($_REQUEST['Guide_Id']))
  {
     $id = $_REQUEST['Guide_Id'];
@@ -74,16 +86,16 @@ if(isset($_REQUEST['Guide_Id']))
     </form>
     <form action="" class="book_tour">
         <p class="title_book">BOOK THIS GUIDE</p>
-            <select class="select_Price form-select" aria-label="Default select example">
-                <option selected>Tour Price:</option>
-                <option value="1">12$ for 1 person</option>
-                <option value="2">17$ for 2 person</option>
-                <option value="3">22$ for 3 person</option>
-                <option value="2">26$ for 4 person</option>
-                <option value="2">30$ for 5 person</option>
+            <select name="Price"  class="select_Price form-select" aria-label="Default select example">
+                <option  disabled selected>Tour Price:</option>
+                <option value="12">12$ for 1 person</option>
+                <option value="17">17$ for 2 person</option>
+                <option value="22">22$ for 3 person</option>
+                <option value="26">26$ for 4 person</option>
+                <option value="30">30$ for 5 person</option>
             </select>
             <select class="select_Price form-select" aria-label="Default select example">
-                <option selected>Select a time:</option>
+                <option disabled selected>Select a time:</option>
                 <option value="1">8:00 PM</option>
                 <option value="3">8:30 PM</option>
                 <option value="3">9:00 PM</option>
@@ -94,17 +106,7 @@ if(isset($_REQUEST['Guide_Id']))
                         <p class="language_P">Date :</p>
                     </div>
                     <div class="col-md">
-                        <p class="date_P">00/00/0000</p>
-                    </div>  
-                </div>
-            </div>
-            <div class="location">
-                <div class="row">
-                    <div class="col-md ">
-                        <p class="language_P">Location :</p>
-                    </div>
-                    <div class="col-md">
-                        <a href=""><p class="locationP date_P">Show location on map </p></a>
+                        <p class="date_P"><?php echo $_GET["date"];?></p>
                     </div>  
                 </div>
             </div>
@@ -122,7 +124,7 @@ if(isset($_REQUEST['Guide_Id']))
                     </div>  
                 </div>
             </div>
-            <button class="btn_book">BOOK NOW</button>
+            <button type="submit" name="BOOK" class="btn_book">BOOK NOW</button>
     </form>
 </body>
 </html>

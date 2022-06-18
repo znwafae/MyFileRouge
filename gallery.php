@@ -45,9 +45,9 @@ include "navbar.php";
                 The Power Of Tangier Guides
             </p>
             <p class="text_power">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus <br>
-                sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus <br> 
-                dolor purus non enim praesent elementum facilisis leo, vel
+            “TRAVEL IS THE ONLY THING YOU <br>
+             BUY THAT MAKES YOU RICHER.” <br>
+            come to Explore tangier with best guides 
             </p>
         </div>
         <div class=" box_gallery d-flex justify-content-around justify-content-xl-around">

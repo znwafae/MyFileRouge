@@ -45,17 +45,17 @@ if(isset($_POST['signUp']))
                     <button type="button" class="toggle_btn" onclick="signUp()">sign up</button>
                 </div>
                 <form method = "POST" action="login.php" id="login" class="input_group">
-                    <input type="text" class="input_field" placeholder="Email" name="Email">
-                    <input type="text" class="input_field" placeholder="password" name="Password">
+                    <input type="email" class="input_field" placeholder="Email" name="Email">
+                    <input type="password" class="input_field" placeholder="password" name="Password">
                     <button type="submit" class="submit_btn" name="login">Log In</button>
                 </form>
                 <form action="sign.php" id="signUp" class="input_group" method = "POST">
                     <input type="text" class="input_field" placeholder="Full Name" name="Full_Name">
                     <input type="text" class="input_field" placeholder="country" name="Country">
                     <input type="text" class="input_field" placeholder="city" name="City">
-                    <input type="text" class="input_field" placeholder="Phone" name="Phone">
-                    <input type="text" class="input_field" placeholder="email" name="Email">
-                    <input type="text" class="input_field" placeholder="password" name="Password">
+                    <input type="phone" class="input_field" placeholder="Phone" name="Phone">
+                    <input type="email" class="input_field" placeholder="email" name="Email">
+                    <input type="password" class="input_field" placeholder="password" name="Password">
                     <button type="submit" class="submit_btn" name="signUp">Sign Up</button>
                 </form>
             </div>
@@ -79,3 +79,9 @@ if(isset($_POST['signUp']))
     </script>
 </body>
 </html> 
+
+<!-- 
+SELECT * 
+FROM language l inner join guide_language gl on l.Language_Id=gl.Language_Id
+inner join guide g on gl.Guide_Id=g.Guide_Id
+WHERE l.Name='arbic' -->

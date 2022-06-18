@@ -34,9 +34,10 @@ include "navbar.php";
             The Power Of Tangier Guides
         </p>
         <p class="text_power">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus <br>
-             sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus <br> 
-             dolor purus non enim praesent elementum facilisis leo, vel
+        Get ready to experince the thrill of a magical tour <br> 
+        throughout tangier, its people, its culture, <br>
+        its unuque landscapes, and original activities <br> 
+        that will enchant your mind and senses
         </p>
     </div>
 <!------------------------ about services -------------------------->
@@ -44,23 +45,24 @@ include "navbar.php";
         <img class="img_about" src="pictures/P1150351 1.png" alt="">
         <div class="box_services">
             <p class="title_services">Our Services</p>
-            <p class="text_services">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-                elit ut aliquam, purus sit amet luctus venenatis,  <br>
-                lectus magna fringilla urna, porttitor rhoncus dolor <br>
-                purus non enim praesent elementum facilisis leo, vel <br>
-                fringilla est ullamcorper eget nulla
+            <p class="text_services">The Tangier Guides  website makes it easy to find 
+            and meet locals who want to share not only tourist attractions 
+            and famous must-sees, but also what’s happening ‘behind 
+            the scenes’, as well as their favourite spots and best 
+            things to do in the city you’re visiting.
             </p>
         </div>
     </div>
 <!-- ------------------------about guides ------------------------------>
     <div class=" about_guides d-flex justify-content-around justify-content-xl-around">
         <div class="about_guides">
-            <p class="title_services">Our Services</p>
-            <p class="text_services">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-                elit ut aliquam, purus sit amet luctus venenatis,  <br>
-                lectus magna fringilla urna, porttitor rhoncus dolor <br>
-                purus non enim praesent elementum facilisis leo, vel <br>
-                fringilla est ullamcorper eget nulla
+            <p class="title_services">Our Guides</p>
+            <p class="text_services">Booking a guides  through our website is 
+            the keyto <br> stress-free travel,each trip is organized by a local<br>
+            expert who has been carefully selected and vetted.<br>With heaps 
+            of on-the-ground knowledge, our <br>experts will make sure 
+            your travels 
+            are extraordinary,<br>as well as taking care of all the finer details.
             </p>
         </div>
         <img class="img_about" src="pictures/P1150351 2.png" alt="">

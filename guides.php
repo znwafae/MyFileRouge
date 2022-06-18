@@ -1,26 +1,25 @@
 <?php
 include "connection.php";
 include "navbar.php";
+     
      $sql = "SELECT * FROM guide";
      $result = mysqli_query($conn, $sql);
      if(isset($_POST['filtre']))
-     {     
-        $date=$_POST['day_tour']; 
-        // $sql2="SELECT *
-        // FROM guide INNER JOIN guide_language ON guide.Guide_Id=guide_language.Guide_Id
-        //     INNER JOIN language ON guide_language.Language_Id=language.Language_Id
-        //     WHERE language.Name=""";
-        $sql="SELECT *
-        FROM guide
-        WHERE Guide_Id NOT IN (
-            SELECT guide.Guide_Id
-            FROM guide 
-            inner join booking on booking.Guide_Id=guide.Guide_Id
-            inner join meeting on meeting.Booking_Id=booking.Booking_Id
-            WHERE meeting.Date = '$date'
-        )";
-             $result = mysqli_query($conn, $sql);
-     }
+     {    
+        $date=$_POST['day_tour'];
+        $langue=$_POST['langue'];
+        $sql1="SELECT * 
+                FROM language l inner join guide_language gl on l.Language_Id=gl.Language_Id
+                inner join guide g on gl.Guide_Id=g.Guide_Id
+                WHERE l.Language_Id='$langue' AND g.Guide_Id NOT IN (
+                    SELECT guide.Guide_Id
+                    FROM guide 
+                    inner join booking on booking.Guide_Id=guide.Guide_Id
+                    inner join meeting on meeting.Booking_Id=booking.Booking_Id
+                    WHERE meeting.Date = '$date') ";
+            $result = mysqli_query($conn,$sql1);
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,9 +51,7 @@ include "navbar.php";
             The Power Of Tangier Guides
         </p>
         <p class="text_PowerG">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus <br>
-             sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus <br> 
-             dolor purus non enim praesent elementum facilisis leo, vel
+        Browse our guides  list to find a companion perfectly suited to you.
         </p>
     </div>
 <!------------------------- Search -------------------->
@@ -65,23 +62,23 @@ include "navbar.php";
             <p class="Filter_by">Filter Search By</p>
             <div class="By_langauge">By Langauge</div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="Arabic">
+                <input class="Check form-check-input" type="checkbox" name="langue" value="3">
                 <label class="Check_label form-check-label">Arabic </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="French">
+                <input class="Check form-check-input" type="checkbox" name="langue" value="2">
                 <label class="Check_label form-check-label">French  </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="English">
+                <input class="Check form-check-input" type="checkbox" name="langue" value="1">
                 <label class="Check_label form-check-label">English </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="Spanish">
+                <input class="Check form-check-input" type="checkbox" name="langue" value="4">
                 <label class="Check_label form-check-label">Spanish  </label>
             </div>
             <div class="form-check">
-                <input class="Check form-check-input" type="checkbox" value="Korean">
+                <input class="Check form-check-input" type="checkbox" name="langue" value="5">
                 <label class="Check_label form-check-label">Korean  </label>
             </div>
             <div class="By_langauge">By Date</div>
@@ -96,7 +93,7 @@ include "navbar.php";
                 <div class="hover_profile">
                     <img class="img_guide" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                     <div class="hover_btn">
-                        <a href="profile.php?Guide_Id=<?php echo $row["Guide_Id"] ?>"><button class="btn_profile">view the profile</button></a>
+                        <a href="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>&date=<?php if(isset($date)){    echo $date;}?>"><button class="btn_profile">view the profile</button></a>
                     </div>
                 </div>
                 <?php
