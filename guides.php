@@ -93,7 +93,7 @@ include "navbar.php";
                 <div class="hover_profile">
                     <img class="img_guide" src="<?php echo "pic_guides/" . $row["Picture"]?>" alt="">
                     <div class="hover_btn">
-                        <a href="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>&date=<?php if(isset($date)){    echo $date;}?>"><button class="btn_profile">view the profile</button></a>
+                        <a href="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>&date=<?php if(isset($date)){echo $date;}?>"><button class="btn_profile">view the profile</button></a>
                     </div>
                 </div>
                 <?php

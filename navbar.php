@@ -20,7 +20,7 @@
                 <a href="home.php">HOME</a>
                 <a href="cantact.php">CANTACT</a>
                 <?php 
-                    // session_start();
+                    session_start();
                     if (isset($_SESSION['User_Id'])) {
 
                 ?>

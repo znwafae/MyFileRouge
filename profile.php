@@ -1,16 +1,18 @@
 <?php
-session_start();
+// session_start();
 require 'connection.php';
-$date = date('Y-m-d');
-$idUSER = $_SESSION['User_Id'];
+// $idUSER = $_SESSION['User_Id'];
 $Guide_Id = $_GET['Guide_Id'];
+$date = date('Y-m-d');
 $Price = $_GET['Price'];
+$Date = $_GET['date'];
+$Time = $_GET['Time'];
 
 if (isset($_POST['BOOK'])) {
 
-    $bookSql = "INSERT INTO `booking`(`User_Id`, `Guide_Id`, `Date`, `Total`) VALUES ('$idUSER','[value-3]','[value-4]','[value-5]')"; 
-
-    $conn->query($bookSql);
+    $bookSql = "INSERT INTO `booking`(`Guide_Id`, `Y-m-d`, `Price`) VALUES ('$Guide_Id','$date','$Price')"; 
+    $meetSql = "INSERT INTO `meeting`( `date`, `Time`) VALUES ('$Date','$Time')";
+    $conn->query($bookSql,$meetSql);
 
 }
 if(isset($_REQUEST['Guide_Id']))
@@ -84,21 +86,22 @@ if(isset($_REQUEST['Guide_Id']))
                 </div>
             </div>
     </form>
-    <form action="" class="book_tour">
+    <!--------------- booking -------------------------->
+    <form action="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>" class="book_tour">
         <p class="title_book">BOOK THIS GUIDE</p>
-            <select name="Price"  class="select_Price form-select" aria-label="Default select example">
-                <option  disabled selected>Tour Price:</option>
-                <option value="12">12$ for 1 person</option>
-                <option value="17">17$ for 2 person</option>
-                <option value="22">22$ for 3 person</option>
-                <option value="26">26$ for 4 person</option>
-                <option value="30">30$ for 5 person</option>
+            <select  name="Price" class="select_Price form-select" aria-label="Default select example">
+                <option name="Price" disabled selected>Tour Price:</option>
+                <option name="Price" >12$ for 1 person</option>
+                <option name="Price" >17$ for 2 person</option>
+                <option name="Price" >22$ for 3 person</option>
+                <option name="Price" >26$ for 4 person</option>
+                <option name="Price" >30$ for 5 person</option>
             </select>
-            <select class="select_Price form-select" aria-label="Default select example">
+            <select  class="select_Price form-select" aria-label="Default select example">
                 <option disabled selected>Select a time:</option>
-                <option value="1">8:00 PM</option>
-                <option value="3">8:30 PM</option>
-                <option value="3">9:00 PM</option>
+                <option name="Time" >8:00 PM</option>
+                <option name="Time" >8:30 PM</option>
+                <option name="Time" >9:00 PM</option>
             </select>
             <div class="date">
                 <div class="row">
