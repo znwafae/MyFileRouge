@@ -1,18 +1,24 @@
 <?php
-// session_start();
+session_start();
 require 'connection.php';
-// $idUSER = $_SESSION['User_Id'];
+$idUSER = $_SESSION['User_Id'];
+
+$Date_booking = $_GET['dates'];
+if (isset($_POST['BOOK'])) {
 $Guide_Id = $_GET['Guide_Id'];
 $date = date('Y-m-d');
-$Price = $_GET['Price'];
-$Date = $_GET['date'];
-$Time = $_GET['Time'];
 
-if (isset($_POST['BOOK'])) {
+$Time = $_POST['Time'];
+$Price = $_POST['Total'];
+    $bookSql = "INSERT INTO booking (`User_Id`,`Guide_Id`, `Date`, `Total`) VALUES ($idUSER,$Guide_Id,'$date',$Price);"; 
+    mysqli_query($conn,$bookSql);
+    $last_id = mysqli_insert_id($conn);
+    $meetSql = "INSERT INTO meeting ( `Booking_Id`,  `Date`, `Time`) VALUES ($last_id,'$Date_booking','$Time');";
 
-    $bookSql = "INSERT INTO `booking`(`Guide_Id`, `Y-m-d`, `Price`) VALUES ('$Guide_Id','$date','$Price')"; 
-    $meetSql = "INSERT INTO `meeting`( `date`, `Time`) VALUES ('$Date','$Time')";
-    $conn->query($bookSql,$meetSql);
+mysqli_query($conn,$meetSql);
+header("location:home.php");
+    // $conn->query($bookSql,$meetSql);
+    
 
 }
 if(isset($_REQUEST['Guide_Id']))
@@ -87,21 +93,21 @@ if(isset($_REQUEST['Guide_Id']))
             </div>
     </form>
     <!--------------- booking -------------------------->
-    <form action="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>" class="book_tour">
+    <form action="profile.php?Guide_Id=<?php echo $row["Guide_Id"]?>&dates=<?php echo $Date_booking; ?>" method="POST" class="book_tour">
         <p class="title_book">BOOK THIS GUIDE</p>
-            <select  name="Price" class="select_Price form-select" aria-label="Default select example">
-                <option name="Price" disabled selected>Tour Price:</option>
-                <option name="Price" >12$ for 1 person</option>
-                <option name="Price" >17$ for 2 person</option>
-                <option name="Price" >22$ for 3 person</option>
-                <option name="Price" >26$ for 4 person</option>
-                <option name="Price" >30$ for 5 person</option>
+            <select  name="Total" class="select_Price form-select" aria-label="Default select example">
+                <option disabled selected>Tour Price:</option>
+                <option value = "12" >12$ for 1 person</option>
+                <option value = "17">17$ for 2 person</option>
+                <option value = "22">22$ for 3 person</option>
+                <option value = "26">26$ for 4 person</option>
+                <option value = "30">30$ for 5 person</option>
             </select>
-            <select  class="select_Price form-select" aria-label="Default select example">
+            <select name="Time" class="select_Price form-select" aria-label="Default select example">
                 <option disabled selected>Select a time:</option>
-                <option name="Time" >8:00 PM</option>
-                <option name="Time" >8:30 PM</option>
-                <option name="Time" >9:00 PM</option>
+                <option value = "8:00"> 8:00 PM</option>
+                <option value = "8:30"> 8:30 PM</option>
+                <option value = "9:00"> 9:00 PM</option>
             </select>
             <div class="date">
                 <div class="row">
@@ -109,7 +115,7 @@ if(isset($_REQUEST['Guide_Id']))
                         <p class="language_P">Date :</p>
                     </div>
                     <div class="col-md">
-                        <p class="date_P"><?php echo $_GET["date"];?></p>
+                        <p class="date_P"><?php echo $_GET["dates"];?></p>
                     </div>  
                 </div>
             </div>

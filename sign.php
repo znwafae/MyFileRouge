@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include "connection.php";
 include "navbar.php"; 
 if(isset($_POST['signUp']))
