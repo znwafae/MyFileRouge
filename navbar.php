@@ -18,7 +18,7 @@
                 <a href="gallery.php">GALLERY</a>
                 <a href="home.php"><img src="pictures/Logo.png" alt="logo" class="imgLogo" /></a>
                 <a href="home.php">HOME</a>
-                <a href="cantact.php">CANTACT</a>
+                <a href="footer.php/#contact">CANTACT</a>
                 <?php 
                     // session_start();
                     if (isset($_SESSION['User_Id'])) {

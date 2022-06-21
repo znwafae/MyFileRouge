@@ -11,8 +11,8 @@
     <div class="footer">
         <a href="home.php"><img class="Logofooter" src="pictures/Logo.png" alt=""></a>
         <div class="minifooter">
-            <div class="atm1">
-                <p class="title_cantact">CANTACT :</p>
+            <div id="contact" class="atm1">
+               <p  class="title_cantact">CANTACT :</p></a>
                 <p class="info_cantact">Lorem ipsum dolor 40sit</p>
                 <p class="info_cantact">tangierGuides@gmail.com</p>
                 <p class="info_cantact">0635947281</p>
